@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#fff8fb" />
+    <meta
+      name="description"
+      content="aruouz 的个人主页与数字分身聊天区"
+    />
+    <title>aruouz · 正在学习 AI 的抽象体</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <a class="brand" href="#top" aria-label="返回首页">
+          <span class="brand-mark">a<span>/</span></span>
+          <span>aruouz</span>
+        </a>
+        <nav class="topnav" aria-label="页面导航">
+          <a class="active" href="#about">认识一下</a>
+          <a href="#works">作品</a>
+          <a href="#chat">来聊聊</a>
+        </nav>
+        <span class="availability"><i></i> 欢迎来聊</span>
+      </header>
+
+      <main id="top" class="main-grid">
+        <section class="profile-column" id="about" aria-labelledby="profile-title">
+          <div class="eyebrow"><span class="eyebrow-line"></span> 很高兴认识你</div>
+          <div class="intro-layout">
+            <div class="intro-copy">
+              <div class="avatar" role="img" aria-label="aruouz 的抽象头像">
+                <div class="avatar-halo"></div>
+                <div class="avatar-face">
+                  <span class="eye eye-left"></span>
+                  <span class="eye eye-right"></span>
+                  <span class="mouth"></span>
+                </div>
+                <span class="avatar-star star-one">✦</span>
+                <span class="avatar-star star-two">+</span>
+              </div>
+              <h1 id="profile-title">你好，我是<br /><em>aruouz</em><span class="cursor">_</span></h1>
+              <p class="tagline">正在学习用 AI 应用</p>
+              <p class="intro-text">
+                我喜欢新奇的事物，也喜欢把刚学会的东西马上用起来。最近，我在一边学 AI，一边慢慢整理自己的作品和想法。
+              </p>
+            </div>
+            <a class="chat-teaser" href="#chat">
+              <span class="teaser-topline"><span class="mini-avatar" aria-hidden="true">a/</span><span class="teaser-status"><i></i> 在线</span></span>
+              <strong>想聊聊吗？</strong>
+              <span class="teaser-copy">可以直接问我最近在做什么。</span>
+              <span class="teaser-action">打开数字分身 <span aria-hidden="true">↗</span></span>
+            </a>
+          </div>
+
+          <div class="work-block" id="works">
+            <div class="section-label"><span>01</span> 最近在做的东西</div>
+            <div class="work-list">
+              <article class="work-item">
+                <div class="work-topline"><span class="work-index">01</span><span class="work-status">正在搭建</span></div>
+                <h3>个人主页原型</h3>
+                <p>把个人信息、学习方向和数字分身放进一个可以交流的空间。</p>
+              </article>
+              <article class="work-item">
+                <div class="work-topline"><span class="work-index">02</span><span class="work-status">持续整理</span></div>
+                <h3>AI 学习与知识整理</h3>
+                <p>记录 AI 工具、应用场景和底层原理，也尝试把它们变成小作品。</p>
+              </article>
+            </div>
+          </div>
+
+          <div class="info-block" aria-label="个人信息">
+            <div class="section-label"><span>02</span> 关于我</div>
+            <dl class="info-list">
+              <div class="info-row">
+                <dt>现在主要在做</dt>
+                <dd>学习 AI 工具以及底层原理<br />接触更多的技术</dd>
+              </div>
+              <div class="info-row">
+                <dt>我的兴趣</dt>
+                <dd>手工 / 读书 / AI 应用</dd>
+              </div>
+              <div class="info-row">
+                <dt>我的特点</dt>
+                <dd>喜欢新奇事物，并且可以快速学习与应用</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="focus-block" id="focus">
+            <div class="section-label"><span>03</span> 最近在关注</div>
+            <div class="focus-tags" aria-label="关注方向">
+              <span class="tag tag-pink">AI 应用</span>
+              <span class="tag tag-mint">内容表达</span>
+              <span class="tag tag-lavender">知识整理</span>
+              <span class="tag tag-yellow">技术学习</span>
+            </div>
+          </div>
+
+          <div class="contact-block" id="contact">
+            <div class="section-label"><span>04</span> 联系我</div>
+            <div class="contact-row">
+              <p>有想法、合作机会，或者只是想聊聊 AI？直接在这里给我留言就好。</p>
+              <a class="contact-link" href="#chat">去聊聊 <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+
+          <footer class="profile-footer">
+            <span>© 2026 aruouz</span>
+            <span class="footer-note">愿我们都一直保持好奇。</span>
+          </footer>
+        </section>
+
+        <section class="chat-column" id="chat" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="chat-title">
+          <div class="chat-panel">
+            <button class="chat-close" id="chat-close" type="button" aria-label="关闭聊天窗口" title="关闭聊天窗口">×</button>
+            <div class="chat-header">
+              <div>
+                <div class="eyebrow"><span class="eyebrow-line"></span> 可以直接问我</div>
+                <h2 id="chat-title">想了解我什么？<span class="pink-dot">.</span></h2>
+              </div>
+              <div class="twin-status" aria-label="数字分身在线">
+                <span class="status-ring"><span></span></span>
+                <span>在线</span>
+              </div>
+            </div>
+
+            <div class="chat-body" id="chat-messages" aria-live="polite">
+              <div class="message-row twin-row">
+                <div class="mini-avatar" aria-hidden="true">a/</div>
+                <div class="message-content">
+                  <div class="message-meta"><strong>aruouz 的数字分身</strong><span>刚刚</span></div>
+                  <div class="bubble twin-bubble">
+                    嗨！我是 aruouz 的数字分身。<br />你可以问我一些关于他的近况、作品和想法的问题。
+                  </div>
+                </div>
+              </div>
+
+              <div class="suggestions" aria-label="常见问题">
+                <span class="suggestion-label">你可以这样问</span>
+                <button class="question-chip" type="button" data-question="你现在在做什么？">你现在在做什么？ <span>↗</span></button>
+                <button class="question-chip" type="button" data-question="你有哪些作品？">你有哪些作品？ <span>↗</span></button>
+                <button class="question-chip" type="button" data-question="这些作品的应用场景有哪些？">作品能用在哪里？ <span>↗</span></button>
+              </div>
+            </div>
+
+            <form class="chat-form" id="chat-form">
+              <label class="sr-only" for="chat-input">输入你想问的问题</label>
+              <input id="chat-input" type="text" autocomplete="off" placeholder="输入一个问题，和我聊聊..." maxlength="160" />
+              <button class="send-button" type="submit" aria-label="发送问题" title="发送问题">
+                <span>发送</span><span aria-hidden="true">↗</span>
+              </button>
+            </form>
+            <div class="chat-hint">随时可以问我</div>
+          </div>
+          <div class="chat-aside"><span>从这里开始认识我</span><span>欢迎随时来聊 ↓</span></div>
+        </section>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
